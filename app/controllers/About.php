@@ -7,7 +7,7 @@ class About extends Controllers {
         $data['umur'] = $umur;
         $data['judul'] = 'About';
         $this->views('templates/header', $data);
-        $this->views('about/index', $data); // Ganti 'home/index' dengan 'about/index' jika itu nama yang benar
+        $this->views('about/index', $data); 
         $this->views('templates/footer');
     }
     
@@ -15,7 +15,7 @@ class About extends Controllers {
     {
         $data['judul'] = 'Pages';
         $this->views('templates/header', $data);
-        $this->views('about/page', $data); // Ganti 'about/page' dengan nama yang sesuai
+        $this->views('about/page', $data);
         $this->views('templates/footer');
     }
 }
